@@ -10,7 +10,6 @@ html {
 }
 
 header {
-    position: fixed; /* se quede fijo */
     display: flex;
     justify-content: space-around;
     width: 100%;
