@@ -10,12 +10,12 @@ html {
 }
 
 header {
+    position: fixed; /* se quede fijo */
     display: flex;
     justify-content: space-around;
     width: 100%;
     min-width: 320px;
     height: 80px;
-    padding-top: 10px;
     color: #FFFFFF;
     background: linear-gradient(207.8deg, #C0C0C0 16.69%, #68A7AD 100%);
 }
@@ -23,6 +23,7 @@ header {
 
 .container-header-logo {
     position: relative;
+    top: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -41,6 +42,8 @@ header {
 }
 
 header nav {
+    position: relative; /* utilizar propiedades como top */
+    top: 10px;
     display: flex;
     justify-content: flex-end;
 }
@@ -60,7 +63,8 @@ header nav {
 .main-section {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    position: relative;
+    top: 10px;
     text-align: center;
 }
 
@@ -78,7 +82,8 @@ header nav {
 }
 
 article {
-    margin-top: 20px;
+    position: relative;
+    top: 20px;
 }
 
 .container-article {
@@ -91,6 +96,7 @@ article {
 }
 
 .container-article .item {
+    border: 1px solid #BA55D3	;
     background-color: #EE82EE	;
 }
 
@@ -117,6 +123,8 @@ article {
 .secondary-section {
     display: flex;
     height: 150px;
+    position: relative;
+    top: 40px;
     justify-content: space-around;
 }
 
