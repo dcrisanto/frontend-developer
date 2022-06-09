@@ -116,6 +116,7 @@ article {
 
 .secondary-section {
     display: flex;
+    height: 150px;
     justify-content: space-around;
 }
 
@@ -125,7 +126,30 @@ article {
 
 footer {
     display: flex;
-    justify-content: space-evenly; /* justificando horizontalmente */
-    height: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #6495ED	;
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center; /* justificando horizontalmente */
     align-items: center; /*justificando verticalmente*/
+}
+
+footer .section-left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+footer .section-left li {
+    margin: 10px 0;
+}
+
+footer .section-left a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
