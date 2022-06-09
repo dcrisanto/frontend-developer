@@ -16,7 +16,7 @@ header {
     min-width: 320px;
     height: 80px;
     color: #FFFFFF;
-    background: linear-gradient(207.8deg, #C0C0C0 16.69%, #68A7AD 100%);
+    background: linear-gradient(207.8deg, #C0C0C0 16.69%, #DAA520 100%);
 }
 
 
@@ -35,9 +35,15 @@ header {
     color: #EB6383;
 }
 
-.container-header-logo img {
+.container-header-img {
     width: 150px;
     height: 50px;
+    border-radius: 20px;
+    overflow: hidden; /*indica que todo lo que se salga lo oculte */
+}
+
+.container-header-img img {
+    width: 100%
 }
 
 header nav {
@@ -60,29 +66,38 @@ header nav {
 }
 
 .main-section {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: #DCDCDC;
+}
+
+.main-section .card-img {
+    width: 200px;
+    height: 250px;
     position: relative;
     top: 10px;
-    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.main-section-title {
-    padding-bottom: 10px;
-    color: #354259;
-    font-size: 2.6rem;
-}
-
-.main-section img{
-    display: flex;
-    align-self: center;
-    width: 200px;
+.main-section .card-img img{
+    width: 100%;
     height: 200px;
 }
 
+.main-section .card-img p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.main-section .card-img p:nth-child(3) {
+    font-weight: 700;
+    color: #EE82EE;
+}
+
 article {
-    position: relative;
-    top: 20px;
+    
 }
 
 .container-article {
@@ -135,7 +150,7 @@ footer {
     display: flex;
     width: 100%;
     height: 150px;
-    background-color: #6495ED	;
+    background-color: #DAA520	;
 }
 
 footer section {
